@@ -32,24 +32,29 @@ This project is designed to provide a platform for users to share their thoughts
 
 2. Navigate to the project directory:
 
+   ```bash
    cd Post-Comment-Service-Cloudsek
+   ```
 
 3. Install dependencies:
+
+```bash
    npm install
+```
 
 4. create .env file:
 
-   PORT=3000
-   MONGODB_URI=<your-mongodb-uri>
-   JWT_SECRET=<your-jwt-secret>
+```bash
+  PORT=3000
+  MONGODB_URI=<your-mongodb-uri>
+  JWT_SECRET=<your-jwt-secret>
+```
 
 5. start the server:
 
-   npm start
-
-   ```
-
-   ```
+```bash
+npm start
+```
 
 ### How to Use
 
@@ -58,3 +63,11 @@ This project is designed to provide a platform for users to share their thoughts
 3. Customize any other sections as needed!
 
 If you need further assistance or adjustments, feel free to ask!
+
+```
+
+```
+
+```
+
+```
