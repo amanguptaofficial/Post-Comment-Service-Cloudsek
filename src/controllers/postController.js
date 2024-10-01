@@ -45,7 +45,6 @@ const getPostByUserId = async (req, res) => {
   try {
     const { userId } = req.params;
 
-    // Validate the userId format
     if (!mongoose.Types.ObjectId.isValid(userId)) {
       return responseManagement.sendResponse(
         res,
@@ -56,12 +55,11 @@ const getPostByUserId = async (req, res) => {
 
     console.log("=====> userId: ", userId);
 
-    // Fetch posts for the given userId
     const data = await post.find({ userId: userId });
 
     console.log("=> posts:", data);
 
-    // Check if any posts were found
+   
     if (data.length > 0) {
       return responseManagement.sendResponse(
         res,
@@ -80,7 +78,7 @@ const getPostByUserId = async (req, res) => {
       );
     }
   } catch (error) {
-    console.error("Error fetching posts:", error); // Log the full error for debugging
+    console.error("Error fetching posts:", error); 
     return responseManagement.sendResponse(
       res,
       httpStatus.INTERNAL_SERVER_ERROR,

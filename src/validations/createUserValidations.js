@@ -17,17 +17,6 @@ const userLoginSchema = Joi.object().keys({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //----------------------------------------------🔥 register User middleware🔥----------------------------------------------
 
 function validateUser(req, res, next) {
